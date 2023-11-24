@@ -96,7 +96,9 @@ class ProjectController {
       if(updateResult.modifiedCount == 0) throw {status : 400, message : "به روز رسانی انجام نشد"}
       return res.status(200).json({
         status : 200,
+
         success : true,
+
         message : "به روز رسانی با موفقیت انجام شد"
       })
     } catch (error) {
@@ -113,7 +115,9 @@ class ProjectController {
       if(updateResult.modifiedCount == 0) throw {status : 400, message : "به روز رسانی انجام نشد"}
       return res.status(200).json({
         status : 200,
+        
         success : true,
+
         message : "به روز رسانی با موفقیت انجام شد"
       })
     } catch (error) {
